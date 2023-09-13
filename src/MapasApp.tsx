@@ -1,11 +1,14 @@
+import { SocketProvider } from "./context/SocketContext"
 import { MapaPages } from "./pages/MapaPages"
 
 
  const MapasApp = () => {
   return (
-    <div>
-      <MapaPages/>
-    </div>
+
+      <SocketProvider>
+        <MapaPages/>
+      </SocketProvider>
+   
   )
 }
 
